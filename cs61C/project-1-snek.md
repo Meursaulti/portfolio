@@ -37,10 +37,7 @@
 * **单一职责与模块化思维**：项目中包含了十几个如 `is_tail`、`get_next_row` 这样极小粒度的辅助函数。这种设计让我再次体会到，将复杂的判定逻辑下放给底层小函数，不仅能让主更新逻辑 (`update_game`) 变得像读文章一样清晰，也极大降低了 Debug 的难度。
 * **内存管理**：每一次内存请求（`malloc`）和资源获取（`fopen`）都有失败的可能，要处理这些失败的情况不能相信堆中一定有内存，输入一定合法，在这次实现中，失败路径处理比主逻辑更容易出问题，尤其是在 realloc 和文件读取阶段。
 
-## 5.其他
-# 测试用例
-<img width="1175" height="1415" alt="屏幕截图 2026-04-28 121039" src="https://github.com/user-attachments/assets/0e8e3bcf-776f-49b5-a465-8585c92062c7" />
-# 游戏内容
+
 <img width="328" height="542" alt="屏幕截图 2026-04-28 144124" src="https://github.com/user-attachments/assets/28119211-3286-4603-bb41-19d80b866f8d" />
 
 
